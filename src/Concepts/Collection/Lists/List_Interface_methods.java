@@ -1,4 +1,4 @@
-package Concepts.Collection;
+package Concepts.Collection.Lists;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -6,7 +6,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
 
-public class List_Interface_Example {
+public class List_Interface_methods {
 
 	
 	//Performing all List methods

@@ -1,4 +1,4 @@
-package Concepts.Collection;
+package Concepts.Collection.Lists;
 
 import java.util.Arrays;
 import java.util.Enumeration;
@@ -16,6 +16,7 @@ public class Vector_methods {
 		// already contains the specified element.)
 		Vector vector1 = new Vector();
 
+		
 		// add()
 		vector1.add("a");
 		vector1.add(1);
@@ -27,21 +28,27 @@ public class Vector_methods {
 		System.out.println(a);
 		System.out.println("Vector 1 : " + vector1);
 
+		
 		// add(int index, E element)
 		vector1.add(0, "dhedhan");
 		System.out.println(vector1);
 
+		
 		// addAll(int index, Collection<? extends E> c)
+		//This method is of Vector class & not from collection
 		Vector v1 = new Vector();
 		v1.add(0, "ash");
 		v1.addAll(0, vector1);
 
 		System.out.println("Default initial capacity : " + v1.capacity());
 
+		
 		// forEach(Consumer<? super E> action)
 		// performs specified operation on all elements
 		v1.forEach((a1) -> System.out.println(a1 + " added"));
 
+		
+		
 		// removeIf(Predicate<? super E> filter)
 		Predicate condition = v -> v1.contains(1);
 		// v1.removeIf(condition);

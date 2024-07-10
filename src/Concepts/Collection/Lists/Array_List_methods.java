@@ -1,9 +1,8 @@
-package Concepts.Collection;
+package Concepts.Collection.Lists;
 
-import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Vector;
+import java.util.Spliterator;
 
 public class Array_List_methods {
 
@@ -54,6 +53,23 @@ public class Array_List_methods {
 		System.out.println("==Size of arrayList " + arrList.size());
 		System.out.println("==Length of array " + strArr.length);
 
+		
+		
+		//	spliterator()
+		ArrayList<Integer> arI= new ArrayList<Integer>();
+		
+		for(int i=0 ; i<=10 ;i++) {
+			arI.add(i);
+		}
+		
+		Spliterator<Integer> nums = arI.spliterator();
+		
+		nums.forEachRemaining((n)-> System.out.print(n));
+		System.out.println();
+		
+		
+		
+		
 		
 	}
 }

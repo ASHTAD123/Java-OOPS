@@ -1,11 +1,10 @@
-package Concepts.Collection;
+package Concepts.Collection.Lists;
 
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.LinkedList;
 
-class Collection_Example{
+class Collection_methods{
 	
 	public static void main(String[] args) {
 		
