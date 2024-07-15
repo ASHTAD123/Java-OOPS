@@ -40,14 +40,11 @@ public class HashSet_methods {
 		 // Constructors
 		 HashSet hashSet = new HashSet();
 		 
-		 
 		 HashSet hashSet1 = new HashSet(hs);
 		 System.out.println(hashSet1);
 		 
-		 
 		 HashSet hashSet2 = new HashSet(16);
 		 System.out.println("Size : " + hashSet2.size());
-		 
 		 
 		 // HashSet(int initialCapacity, float loadFactor)
 		 HashSet hs1 = new HashSet(20,0.75f);
