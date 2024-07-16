@@ -11,5 +11,9 @@ public class LinkedHashedSet_methods {
 		
 		LinkedHashSet lhs = new LinkedHashSet();
 		
+		
+		
+		
+		
 	}
 }

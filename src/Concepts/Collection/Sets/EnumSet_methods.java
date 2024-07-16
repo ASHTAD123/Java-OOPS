@@ -120,5 +120,7 @@ public class EnumSet_methods {
 		//range
 		System.out.println(eSet);
 	
+		
+		
 	}
 }
