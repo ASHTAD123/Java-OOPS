@@ -88,6 +88,24 @@ public class TreeSet_methods {
 		System.out.println("Removing the highest elemet using poll : "+treeSet.pollLast());
 		
 		System.out.println("After poll" +treeSet);
+		
+		System.out.println("Adding more elements ");
+		treeSet.add(29);
+		treeSet.add(31);
+		treeSet.add(41);
+		treeSet.add(61);
+		
+		System.out.println(treeSet);
+		
+		
+		// public NavigableSet<E> subSet(E fromElement,
+		// public NavigableSet<E> subSet(E fromElement,boolean fromInclusive,E toElement,boolean toInclusive);
+		NavigableSet nvs = treeSet.subSet(1,true,5,true);
+		System.out.println("Elements between 1 to 5 in this set are: "+nvs);
+		
+		//public NavigableSet<E> tailSet(E fromElement, boolean inclusive)
+		SortedSet ss = treeSet.tailSet(29,true);
+		System.out.println("Elements greater & equal to 29 : "+ ss);
 }
 
 }
