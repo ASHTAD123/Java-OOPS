@@ -1,6 +1,7 @@
 package Concepts.Collection.Maps;
 
 import java.util.HashMap;
+import java.util.Map;
 import java.util.Set;
 
 public class HashMap_methods {
@@ -8,7 +9,7 @@ public class HashMap_methods {
 	public static void main(String[] args) {
 		
 		//creating hashmap
-		HashMap myMap = new HashMap();
+		HashMap<Integer,String> myMap = new HashMap();
 	
 		//adding elements
 		myMap.put(1,"a" );
@@ -67,5 +68,28 @@ public class HashMap_methods {
 		// Returns a Collection view of the values contained in this map.
 		System.out.println(" Collection view of the values contained in this map ");
 		System.out.println(myMap.values());
+
+		// public V compute(K key, BiFunction<? super K,? super V,? extends V> remappingFunction)
+		System.out.println("Updating a value using compute()");
+		
+		//myMap.compute(10, (key,val) 
+		//					->val.concat(" is the last alphabet in set"));
+		
+		
+		
+		// public V replace(K key,V value)
+		   System.out.println("Replacing values in Map");
+		   myMap.replace(9, "z");
+		   System.out.println("Updated Map : "+myMap);
+		
+		
+		  //Iterating the map
+		   for(Map.Entry<Integer,String> e : myMap.entrySet()) {
+			   System.out.println("Key : " +e.getKey());
+			   System.out.println("Value : " +e.getValue());
+		   }
+		
+		
+		
 	}
 }
