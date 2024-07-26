@@ -2,6 +2,7 @@ package Concepts.Collection.Maps;
 
 import java.io.FileReader;
 import java.io.FileWriter;
+import java.io.PrintWriter;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Properties;
@@ -15,6 +16,8 @@ public class Properties_methods {
 		FileReader reader = new FileReader("H:\\DSA\\Java_concepts\\src\\Concepts\\Collection\\Maps\\user_preferences.properties");
 		
 		Properties p = new Properties();
+		
+		//Reads a property list (key and element pairs) from the input byte stream. 
 		p.load(reader);
 		
 		System.out.println("Reading from Properties file : ");
@@ -46,6 +49,10 @@ public class Properties_methods {
 		p.setProperty("email    :", "ash93@gmail.com");
 		
 		FileWriter fw = new FileWriter("user_info.properties");
+		
+		//Writes this property list (key and element pairs) in this Properties table
+		//to the output stream in a format suitable for loading into a Properties table 
+		//using the load(InputStream) method.
 		p.store(fw,"user properties file");
 	
 		//Reading written file
@@ -63,6 +70,26 @@ public class Properties_methods {
 			System.out.println(entry.getKey() + " = "
                     + entry.getValue()); 
 		}
+		
+		
+		System.out.println();
+		// public void list(PrintWriter out)
+		Properties prop = new Properties();
+		prop.put("Pen", "10"); 
+		prop.put("Book", "500"); 
+		prop.put("Clothes", "400"); 
+		prop.put("Mobile", "5000");
+		
+		PrintWriter pw = new PrintWriter(System.out);
+		
+		prop.list(pw);
+		System.out.println("Listing out the Properties: "); 
+		pw.flush();
+	
+	
 	}
+	
+	
+	
 
 }
