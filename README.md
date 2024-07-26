@@ -1,2 +1,3 @@
-# Java-OOPS
-My java OOPS practice
+# Java-fundamentals
+
+My Java Fundamentals practice Files
